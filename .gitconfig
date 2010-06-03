@@ -1,0 +1,13 @@
+[alias]
+	co = checkout
+[user]
+	name = Angelo DiNardi
+	email = angelo@dinardi.name
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+[color "status"]
+	added = yellow
+	changed = green
+	untracked = cyan
