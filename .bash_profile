@@ -4,3 +4,8 @@ function get_branch {
 }
 PS1="\$(get_branch)\h:\W \u\$ "
 export LESS="-erX"
+
+if [ -f `brew --prefix`/etc/bash_completion ]; then
+  . `brew --prefix`/etc/bash_completion
+fi
+
