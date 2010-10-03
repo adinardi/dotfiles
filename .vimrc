@@ -9,6 +9,7 @@ set cindent
 set smartindent
 set autoindent
 noremap ` :NERDTreeToggle<CR>
+noremap <leader>f :NERDTreeFind<cr>
 colorscheme molakai
 set number
 set ruler
