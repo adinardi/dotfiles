@@ -23,4 +23,5 @@ set cursorline
 nnoremap j gj
 nnoremap k gk
 noremap <leader>r :set relativenumber<cr>
+noremap <leader>w :FixWhitespace<cr>
 
