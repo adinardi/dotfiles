@@ -22,6 +22,9 @@ vnoremap <tab> %
 set cursorline
 nnoremap j gj
 nnoremap k gk
+nnoremap <down> gj
+nnoremap <up> gk
 noremap <leader>r :set relativenumber<cr>
 noremap <leader>w :FixWhitespace<cr>
+noremap <leader>a :Ack 
 
