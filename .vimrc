@@ -8,7 +8,7 @@ set expandtab
 set cindent
 set smartindent
 set autoindent
-noremap ` :NERDTreeToggle<CR>
+noremap <leader>` :NERDTreeToggle<CR>
 noremap <leader>f :NERDTreeFind<cr>
 colorscheme molakai
 set number
