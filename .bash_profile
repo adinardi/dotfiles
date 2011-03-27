@@ -1,4 +1,7 @@
-export PATH=/usr/local/mysql/bin/:$PATH
+export PATH=/usr/local/bin:/usr/local/mysql/bin/:$PATH
+
+export DYLD_LIBRARY_PATH=/usr/local/mysql/lib:$DYLD_LIBRARY_PATH
+
 function get_branch {
     git branch 2> /dev/null | grep \* | awk '{print "("$2")"}'
 }

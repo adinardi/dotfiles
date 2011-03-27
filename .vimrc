@@ -43,3 +43,4 @@ set statusline+=%L\ %P "total lines/percentage in file
 
 set laststatus=2
 
+let g:CommandTMaxFiles=10000000
