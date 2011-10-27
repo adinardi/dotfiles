@@ -2,7 +2,7 @@ export PATH=/usr/local/bin:/usr/local/mysql/bin/:$PATH
 
 export DYLD_LIBRARY_PATH=/usr/local/mysql/lib:$DYLD_LIBRARY_PATH
 
-set -o vi
+#set -o vi
 
 function get_branch {
     git branch 2> /dev/null | grep \* | awk '{print "("$2")"}'
@@ -23,5 +23,5 @@ has_virtualenv() {
 venv_cd () {
     cd "$@" && has_virtualenv
 }
-alias cd="venv_cd"
+#alias cd="venv_cd"
 
