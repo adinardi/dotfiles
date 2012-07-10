@@ -1,6 +1,6 @@
 [alias]
 	co = checkout
-	dk = difftool
+	dk = difftool -y -t Kaleidoscope
 [user]
 	name = Angelo DiNardi
 	email = angelo@dinardi.name
@@ -13,9 +13,4 @@
 	changed = green
 	untracked = cyan
 [difftool "Kaleidoscope"]
-[difftool "Kaleidoscope"]
 	cmd = ksdiff-wrapper git \"$LOCAL\" \"$REMOTE\"
-[difftool]
-	prompt = false
-[diff]
-	tool = Kaleidoscope
