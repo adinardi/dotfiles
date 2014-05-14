@@ -1,8 +1,10 @@
-// Settings in here override those in "Default/Preferences.sublime-settings", and
-// are overridden in turn by file type specific settings.
 {
+	"auto_match_enabled": false,
+	"highlight_line": true,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
 	"translate_tabs_to_spaces": true,
-    "highlight_line": true,
-    "trim_trailing_white_space_on_save": true,
-    "auto_match_enabled": false
+	"trim_trailing_white_space_on_save": true
 }

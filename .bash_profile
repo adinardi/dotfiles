@@ -1,4 +1,4 @@
-export PATH=~/bin:/usr/local/bin:$PATH
+export PATH=~/bin:/usr/local/bin:/usr/local/share/npm/bin/:$PATH
 #use option+arrow keys to move forward and back in words
 bind '"\e\e[C":forward-word'
 bind '"\e\e[D":backward-word'
@@ -11,8 +11,8 @@ bind '"\e\e[D":backward-word'
 #PS1="\$(get_branch)\h:\W \u\$ "
 export LESS="-erX"
 
-if [ -f `brew --prefix`/etc/bash_completion ]; then
-  . `brew --prefix`/etc/bash_completion
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+  . $(brew --prefix)/etc/bash_completion
 fi
 
 # auto source virtual envs if it can find one
