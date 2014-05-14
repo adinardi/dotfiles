@@ -1,6 +1,8 @@
 [alias]
 	co = checkout
 	dk = difftool -y -t Kaleidoscope
+    mk = mergetool -y -t Kaleidoscope
+    sync = !echo HEAD
 [user]
 	name = Angelo DiNardi
 	email = angelo@dinardi.name
@@ -14,6 +16,17 @@
 	untracked = cyan
 [difftool "Kaleidoscope"]
 	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+[core]
+	excludesfile = /Users/angelo/.gitignore_global
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
 [mergetool "Kaleidoscope"]
 	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
 	trustExitCode = true
+[filter "media"]
+	clean = git-media-clean %f
+	smudge = git-media-smudge %f
